@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace DrawingObjectEditor
+namespace DrawingObjectEditor.Views
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for PartAttributeView.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class PartAttributeView : UserControl
     {
-        public MainWindow()
+        public PartAttributeView()
         {
             InitializeComponent();
         }

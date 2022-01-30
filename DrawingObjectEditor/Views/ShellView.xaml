@@ -1,0 +1,18 @@
+﻿<Window x:Class="DrawingObjectEditor.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:cm="http://caliburnmicro.com"
+        xmlns:local="clr-namespace:DrawingObjectEditor.Views"
+        mc:Ignorable="d"
+        Title="Drawing object editor" Height="450" Width="800" Topmost="True">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <local:ObjectIdentificationView Grid.Row="0" cm:Bind.Model="{Binding IdentificationViewModel}"/>
+        <local:ObjectAttributesView Grid.Row="1" cm:Bind.Model="{Binding AttributesViewModel}"/>
+    </Grid>
+</Window>

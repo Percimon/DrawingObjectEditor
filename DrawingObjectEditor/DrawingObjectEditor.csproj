@@ -112,20 +112,32 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="Models\PartWrapper.cs" />
+    <Compile Include="Services\TeklaEventHandler.cs" />
+    <Compile Include="Services\TeklaObjectProvider.cs" />
+    <Compile Include="ViewModels\ObjectAttributesViewModel.cs" />
+    <Compile Include="ViewModels\ObjectIdentificationViewModel.cs" />
+    <Compile Include="ViewModels\PartAttributeViewModel.cs" />
+    <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\ObjectAttributesView.xaml.cs">
+      <DependentUpon>ObjectAttributesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ObjectIdentificationView.xaml.cs">
+      <DependentUpon>ObjectIdentificationView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PartAttributeView.xaml.cs">
+      <DependentUpon>PartAttributeView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShellView.xaml.cs">
+      <DependentUpon>ShellView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -151,6 +163,25 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Page Include="Views\ObjectAttributesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ObjectIdentificationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PartAttributeView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShellView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
