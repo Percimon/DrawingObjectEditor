@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Caliburn.Micro;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,7 +8,7 @@ using Tekla.Structures.Model;
 
 namespace DrawingObjectEditor.ViewModels
 {
-    class PartAttributeViewModel
+    class PartAttributeViewModel : PropertyChangedBase
     {
         private Part _part;
         private Model _model;
@@ -20,6 +21,7 @@ namespace DrawingObjectEditor.ViewModels
             set
             {
                 _name = value;
+                NotifyOfPropertyChange(()=>Name);
             }
 
         }
@@ -33,6 +35,7 @@ namespace DrawingObjectEditor.ViewModels
             set
             {
                 _class = value;
+                NotifyOfPropertyChange(()=>Class);
             }
 
         }

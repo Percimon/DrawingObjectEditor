@@ -25,6 +25,6 @@
             <TextBlock Text="Class"/>
             <TextBox x:Name="Class"/>
         </StackPanel>
-        <Button x:Name="ModifyPart" Height="25" Width="200" Content="Modify"/>
+        <Button x:Name="ModifyPart" Height="25" Width="200" Content="Modify" HorizontalAlignment="Left"/>
     </StackPanel>
 </UserControl>

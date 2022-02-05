@@ -117,14 +117,23 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Models\PartWrapper.cs" />
+    <Compile Include="Models\PointWrapper.cs" />
     <Compile Include="Services\TeklaEventHandler.cs" />
     <Compile Include="Services\TeklaObjectProvider.cs" />
+    <Compile Include="ViewModels\BeamGeometryViewModel.cs" />
     <Compile Include="ViewModels\ObjectAttributesViewModel.cs" />
+    <Compile Include="ViewModels\ObjectGeometryViewModel.cs" />
     <Compile Include="ViewModels\ObjectIdentificationViewModel.cs" />
     <Compile Include="ViewModels\PartAttributeViewModel.cs" />
     <Compile Include="ViewModels\ShellViewModel.cs" />
+    <Compile Include="Views\BeamGeometryView.xaml.cs">
+      <DependentUpon>BeamGeometryView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ObjectAttributesView.xaml.cs">
       <DependentUpon>ObjectAttributesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ObjectGeometryView.xaml.cs">
+      <DependentUpon>ObjectGeometryView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\ObjectIdentificationView.xaml.cs">
       <DependentUpon>ObjectIdentificationView.xaml</DependentUpon>
@@ -166,7 +175,15 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Page Include="Views\BeamGeometryView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\ObjectAttributesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ObjectGeometryView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

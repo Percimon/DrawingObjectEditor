@@ -11,8 +11,10 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
         <local:ObjectIdentificationView Grid.Row="0" cm:Bind.Model="{Binding IdentificationViewModel}"/>
         <local:ObjectAttributesView Grid.Row="1" cm:Bind.Model="{Binding AttributesViewModel}"/>
+        <local:ObjectAttributesView Grid.Row="2" cm:Bind.Model="{Binding GeometryViewModel}"/>
     </Grid>
 </Window>

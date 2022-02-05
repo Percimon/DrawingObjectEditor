@@ -12,7 +12,7 @@ namespace DrawingObjectEditor.ViewModels
     {
         public ObjectIdentificationViewModel IdentificationViewModel { get; set; }
         public ObjectAttributesViewModel AttributesViewModel { get; set; }
-
+        public ObjectGeometryViewModel GeometryViewModel { get; set; }
         public ShellViewModel()
         {
             IEventAggregator events = new EventAggregator();
@@ -21,7 +21,8 @@ namespace DrawingObjectEditor.ViewModels
 
             IdentificationViewModel = new ObjectIdentificationViewModel(events);
             AttributesViewModel = new ObjectAttributesViewModel(events);
-           
+            GeometryViewModel = new ObjectGeometryViewModel(events);
+          
         }
     }
 }
