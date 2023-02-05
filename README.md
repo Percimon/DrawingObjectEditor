@@ -1,3 +1,6 @@
-### Tekla drawing object editor
-Provide following tools for Tekla Structures (BIM software):
-* modify model objects' attributes and geometry from drawing mode;
+### Tekla model assistant
+Provides tools for easier editing of model objects in Tekla Structures in Drawing mode:
+
+https://www.youtube.com/watch?v=iGfR25Um33c
+
+Uses Caliburn.Micro framework
